@@ -20,13 +20,28 @@ function createCircle() {
             Math.random() * innerWidth + "px",
             circle)
     }
-    else if (innerWidth >= 500) {
+    else if (innerWidth >= 500 && innerHeight >= 530) {
         setAnimateAttr(15 + size + "px",
             15 + size + "px",
-            Math.random() * innerHeight - 125 + "px",
-            Math.random() * innerWidth - 35+ "px",
+            Math.random() * innerHeight - 75 + "px",
+            Math.random() * innerWidth - 45 + "px",
             circle)
-    } 
+    }
+    else if (innerWidth >= 500 && innerHeight < 530 && innerHeight >= 400){
+        setAnimateAttr(15 + size + "px",
+            15 + size + "px",
+            Math.random() * innerHeight + 100 + "px",
+            Math.random() * innerWidth - 45 + "px",
+            circle)
+    }
+    else if (innerWidth >= 500 && innerHeight < 400)
+    {
+        setAnimateAttr(15 + size + "px",
+            15 + size + "px",
+            Math.random() * innerHeight +250 + "px",
+            Math.random() * innerWidth - 45 + "px",
+            circle)
+    }
     else {
         setAnimateAttr(12 + size + "px",
             12 + size + "px",
@@ -47,3 +62,14 @@ function setAnimateAttr(width, height, top, left, circle) {
     circle.style.top = top;
     circle.style.left = left;
 }
+
+//Function to refresh when orientation in mobile changes
+window.onorientationchange = function() {
+    var orientation = window.orientation;
+    switch (orientation) {
+        case 0:
+        case 90:
+        case -90: window.location.reload();
+            break;
+    }
+};

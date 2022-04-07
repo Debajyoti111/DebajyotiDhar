@@ -20,18 +20,18 @@ function createCircle() {
             Math.random() * innerWidth + "px",
             circle)
     }
-    else if (innerWidth >= 400) {
+    else if (innerWidth >= 500) {
         setAnimateAttr(15 + size + "px",
             15 + size + "px",
             Math.random() * innerHeight - 250 + "px",
-            Math.random() * innerWidth + "px",
+            Math.random() * innerWidth - 25+ "px",
             circle)
-    }
+    } 
     else {
         setAnimateAttr(12 + size + "px",
             12 + size + "px",
             Math.random() * innerHeight - 300 + "px",
-            Math.random() * innerWidth + "px",
+            Math.random() * innerWidth - 50 + "px",
             circle)
     }
     section.appendChild(circle);

@@ -1,3 +1,6 @@
+html{
+    overflow-x: hidden;
+}
 body {
     margin: 0;
     height: 100%;
@@ -194,7 +197,7 @@ section {
     }
 
     .profile {
-        width: 100%;
+        width: 95%;
     }
     .profile-desc{
         font-size: 1rem;
@@ -208,10 +211,8 @@ section {
 #contact-info{
     text-align: center;
     background-color: #222831;
-    color: #fff;
+    color: #EEEEEE;
     padding: 5% 15% 0;
-    overflow-y: hidden;
-    z-index: -1;
 }
 .contact-sub-head{
     font-family: 'Montserrat', sans-serif;

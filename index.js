@@ -24,14 +24,14 @@ function createCircle() {
         setAnimateAttr(15 + size + "px",
             15 + size + "px",
             Math.random() * innerHeight - 75 + "px",
-            Math.random() * innerWidth - 45 + "px",
+            Math.random() * innerWidth - 55 + "px",
             circle)
     }
     else if (innerWidth >= 500 && innerHeight < 530 && innerHeight >= 400){
         setAnimateAttr(15 + size + "px",
             15 + size + "px",
             Math.random() * innerHeight + 100 + "px",
-            Math.random() * innerWidth - 45 + "px",
+            Math.random() * innerWidth - 55 + "px",
             circle)
     }
     else if (innerWidth >= 500 && innerHeight < 400)
@@ -39,14 +39,14 @@ function createCircle() {
         setAnimateAttr(15 + size + "px",
             15 + size + "px",
             Math.random() * innerHeight +250 + "px",
-            Math.random() * innerWidth - 45 + "px",
+            Math.random() * innerWidth - 55 + "px",
             circle)
     }
     else {
         setAnimateAttr(12 + size + "px",
             12 + size + "px",
             Math.random() * innerHeight - 300 + "px",
-            Math.random() * innerWidth - 65 + "px",
+            Math.random() * innerWidth - 55 + "px",
             circle)
     }
     section.appendChild(circle);
